@@ -1,12 +1,97 @@
-import Menu from './menu.js'
-import DataProcessing from "./dataProcessing.js";
 
-class Main {
+
+class HandleMenu {
     constructor() {
-        console.log('test')
-        new Menu();
-        new DataProcessing();
+        console.log('handle menu')
+        this.handleMenu()
+    }
+    handleMenu = () => {
+        //Please use the classes ids and attributes in the nav to construct a way to show and hide the dropdowns on click of the parent.
+        //e.g. clicking parent 1 should display child-1
     }
 }
 
-new Main();
+class DataProcessing  {
+
+    constructor(data) {
+        this.data = data
+        this.processData();
+    }
+
+    //Please process the data provided to fill in the information bellow
+    processData = () => {
+        let bestEmployees = []
+        let boss = ''
+        let clearanceLevel = [];
+
+        console.log(`The employees are:`, this.data)
+        console.log(`the boss is: ${boss}`)
+        console.log('The best rated employees are:', bestEmployees)
+        console.log('The employees with clearance level 1 are:', clearanceLevel)
+    }
+
+}
+
+const Init = () => {
+    new HandleMenu();
+    new DataProcessing(data);
+}
+
+const data = [
+    {
+        "name": "John",
+        "clearanceLevel": 1,
+        "rating": 2,
+        "boss": false
+    },
+    {
+        "name": "Amy",
+        "clearanceLevel": 2,
+        "rating": 2.4,
+        "boss": false
+    },
+    {
+        "name": "Sarah",
+        "clearanceLevel": 2,
+        "rating": 1.3,
+        "boss": true
+    },
+    {
+        "name": "Luke",
+        "clearanceLevel": 2,
+        "rating": 3.5,
+        "boss": false
+    },
+    {
+        "name": "Juliet",
+        "clearanceLevel": 1,
+        "rating": 4.2,
+        "boss": false
+    },
+    {
+        "name": "Daniel",
+        "clearanceLevel": 2,
+        "rating": 3.8,
+        "boss": false
+    },
+    {
+        "name": "Tom",
+        "clearanceLevel": 1,
+        "rating": 4.1,
+        "boss": false
+    },
+    {
+        "name": "Katie",
+        "clearanceLevel": 2,
+        "rating": 4.2,
+        "boss": false
+    },
+    {
+        "name": "Lucy",
+        "clearanceLevel": 1,
+        "rating": 4.1,
+        "boss": false
+    }
+]
+
+window.onload = Init
