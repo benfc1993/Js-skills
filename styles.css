@@ -1,0 +1,32 @@
+.menu {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu-item__text {
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 4px;
+    background-color: #6bd0cb;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.menu-item__text:hover {
+    background-color: #59a29f;
+}
+
+.menu-item {
+    flex: 1;
+
+}
+
+.hide {
+    display: none !important;
+}
