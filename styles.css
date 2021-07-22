@@ -27,6 +27,22 @@
 
 }
 
+.menu-child {
+    background-color: #E2E2E2;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px 30px;
+}
+
+.menu-child p {
+    margin: auto;
+    padding: 15px;
+}
+
+.menu-child p:hover {
+    background-color: #A2A2A2;
+}
+
 .hide {
     display: none !important;
 }
